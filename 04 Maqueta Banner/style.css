@@ -1,0 +1,110 @@
+:root{
+    --paleBlue:hsl(225, 100%, 94%);
+    --brightBlue:hsl(245, 75%, 52%);
+    --veryPaleBlue:hsl(225, 100%, 98%);
+    --desaturatedBlue:hsl(224, 23%, 55%);
+    --darkBlue:hsl(223, 47%, 23%);
+    --font:'Red Hat Display', sans-serif;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    background-color: var(--paleBlue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--font);
+        
+}
+.contenedor{
+    display: flexbox;
+    flex-direction: column;
+    width: max(30%,26rem);
+    height: 40rem;
+    background-color: white;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 4%;
+    text-align: center;
+    
+}
+img{
+    width: 100%;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+}
+h1{
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--darkBlue);
+}
+p{
+    color: var(--desaturatedBlue);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.bloque1{
+    display:grid ;
+    grid-template-columns: 17% 40% 23%;
+    width: 80%;
+    flex-basis: auto;
+
+    margin: 0 auto;
+}
+.nota{
+    position: relative;
+    left: 20px;
+    
+    
+}
+.anual,.precio {
+    display: inline;
+    margin: 0;
+    align-items: center;
+}
+.anual {
+    font-weight: bold;
+    color: var(--darkBlue);
+}
+.anual,.precio{
+    position: relative;
+    left:5px;
+}
+.precio,a{
+    font-size: 14px;
+    font-weight: bold;
+}
+.change{
+    position: relative;
+    top:25%;
+    left:39px;
+}
+.boton{
+    position: relative;
+    top:30px;
+    background-color: var(--brightBlue);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 7px 10px;
+    font-weight: bold;
+    color: #fff;
+}
+.boton:hover{
+    background-color:var(--desaturatedBlue);
+}
+.change:hover{
+    color:var(--desaturatedBlue);
+    text-decoration: none;
+}
+.cancelar{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--desaturatedBlue);
+}
+.cancelar:hover{
+    color: var(--darkBlue);
+}
